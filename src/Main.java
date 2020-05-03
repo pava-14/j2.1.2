@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        long customer_account = 100; //Счет клиента, в рублях
-        long customer_pay = 1100; // Платеж клиента, в рублях
-        long required_pay = 1000; // Порог для начисления бонусов, в рублях
+        long customerAccount = 100; //Счет клиента, в рублях
+        long customerPay = 1100; // Платеж клиента, в рублях
+        long requiredPay = 1000; // Порог для начисления бонусов, в рублях
         long bonus = 0;
 
-        if (customer_pay > required_pay){
-            bonus = customer_pay /100;
+        if (customerPay > requiredPay){
+            bonus = customerPay /100;
         }
         // Обновляем баланс счета
-        customer_account = customer_account + customer_pay + bonus;
+        customerAccount = customerAccount + customerPay + bonus;
 
         //Выводим платеж, значение бонуса и счет клиента
         System.out.printf("Внесен платеж: %d\n" +
                 "Начислен бонус: %d\n" +
-                "Баланс счета: %d", customer_pay, bonus, customer_account);
+                "Баланс счета: %d", customerPay, bonus, customerAccount);
     }
 }
