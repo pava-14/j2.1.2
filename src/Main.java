@@ -8,7 +8,7 @@ public class Main {
         if (customer_pay > required_pay){
             bonus = customer_pay /100;
         }
-        // Счет клиента, в рублях
+        // Обновляем баланс счета
         customer_account = customer_account + customer_pay + bonus;
 
         //Выводим платеж, значение бонуса и счет клиента
